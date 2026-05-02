@@ -78,15 +78,18 @@ Add the |omv| package repositories:
 .. code-block:: console
 
     cat <<EOF >> /etc/apt/sources.list.d/openmediavault.list
-    deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://packages.openmediavault.org/public synchrony main
-    # deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://downloads.sourceforge.net/project/openmediavault/packages synchrony main
+    deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] http://packages.openmediavault.org/public/ synchrony main
+    deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] http://openmediavault.github.io/packages/ synchrony main
+    # deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] http://downloads.sourceforge.net/project/openmediavault/packages/ synchrony main
     ## Uncomment the following line to add software from the proposed repository.
-    # deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://packages.openmediavault.org/public synchrony-proposed main
-    # deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://downloads.sourceforge.net/project/openmediavault/packages synchrony-proposed main
+    # deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] http://packages.openmediavault.org/public/ synchrony-proposed main
+    # deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] http://openmediavault.github.io/packages/ synchrony-proposed main
+    # deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] http://downloads.sourceforge.net/project/openmediavault/packages/ synchrony-proposed main
     ## This software is not part of OpenMediaVault, but is offered by third-party
     ## developers as a service to OpenMediaVault users.
-    # deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://packages.openmediavault.org/public synchrony partner
-    # deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] https://downloads.sourceforge.net/project/openmediavault/packages synchrony partner
+    # deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] http://packages.openmediavault.org/public/ synchrony partner
+    # deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] http://openmediavault.github.io/packages/ synchrony partner
+    # deb [signed-by=/usr/share/keyrings/openmediavault-archive-keyring.gpg] http://downloads.sourceforge.net/project/openmediavault/packages/ synchrony partner
     EOF
 
 .. note::
